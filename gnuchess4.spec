@@ -12,7 +12,9 @@ Version:	4.0.pl80
 Release:	10
 License:	GPL
 Group:		Applications/Games
-Source0:	ftp://ftp.gnu.org/pub/gnu/chess/%{name}-%{version}.tar.gz
+#Source0:	ftp://ftp.gnu.org/pub/gnu/chess/%{name}-%{version}.tar.gz
+Source0:	ftp://distfiles.pld-linux.org/by-md5/8/3/833110654ec086b4ace45e037612033e/%{name}-%{version}.tar.gz
+# Source0-md5:	833110654ec086b4ace45e037612033e
 Source1:	xchess.png
 Source2:	%{name}.desktop
 Patch0:		%{name}-fhs.patch
