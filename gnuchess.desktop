@@ -6,9 +6,9 @@ Comment[es]=Juego de ajedrez de la GNU
 Comment[fr]=Jeu d'ц╘checs
 Comment[pl]=Gra w szachy
 Comment[pt_BR]=Jogo de xadrez da GNU
-Comment[tr]=Bilgisayar satranГ oyunu
-Comment[ru]=Шахматная программа GNU
-Comment[uk]Шахова програма GNU
+Comment[tr]=Bilgisayar satranц╖ oyunu
+Comment[ru]=п╗п╟я┘п╪п╟я┌п╫п╟я▐ п©я─п╬пЁя─п╟п╪п╪п╟ GNU
+Comment[uk]=п╗п╟я┘п╬п╡п╟ п©я─п╬пЁя─п╟п╪п╟ GNU
 Icon=xchess.png
 Exec=gnuchess
 Terminal=1
