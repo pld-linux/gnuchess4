@@ -13,6 +13,6 @@ Icon=xchess.png
 Exec=gnuchess
 Terminal=true
 Type=Application
-Categories=Game;BoardGame
+Categories=Game;BoardGame;
 Encoding=UTF-8
 # vi: encoding=utf-8
