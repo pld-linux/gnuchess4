@@ -25,8 +25,8 @@ Patch3:		%{name}-errno.patch
 Icon:		xchess.xpm
 BuildRequires:	autoconf
 BuildRequires:	ncurses-devel >= 5.0
+Obsoletes:	gnuchess < 5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 The gnuchess package contains the GNU chess program. By default,
@@ -88,15 +88,13 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/games/gnuchess,%{_mandir}/man6} \
 	$RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-cd src
-%{__make} install prefix=$RPM_BUILD_ROOT%{_prefix} \
+%{__make} -C src install \
+	prefix=$RPM_BUILD_ROOT%{_prefix} \
 	exec_prefix=$RPM_BUILD_ROOT%{_prefix}
 
-
-mv $RPM_BUILD_ROOT/%{_bindir}/gnuchess{,4}
+mv $RPM_BUILD_ROOT%{_bindir}/gnuchess{,4}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_pixmapsdir}
-install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}/xchess4.desktop
-sed -i -e "s,gnuchess,gnuchess4," %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}/xchess4.desktop
+sed -e 's,gnuchess,gnuchess4,' %{SOURCE2} > $RPM_BUILD_ROOT%{_desktopdir}/xchess4.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
