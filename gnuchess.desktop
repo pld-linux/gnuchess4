@@ -2,10 +2,11 @@
 Name=Gnuchess
 Comment=Computer chess program
 Comment[de]=Computerschachprogramm
-Comment[fr]=Jeu d'échecs
+Comment[fr]=Jeu d'Ã©checs
 Comment[pl]=Gra w szachy
 Comment[tr]=Bilgisayar satranç oyunu
 Icon=xchess.png
 Exec=gnuchess
 Terminal=1
 Type=Application
+# vi: encoding=utf-8
