@@ -1,3 +1,4 @@
+%define		_name	gnuchess
 Summary:	Computer chess program
 Summary(de):	Computerschachprogramm
 Summary(es):	Juego de ajedrez de la GNU
@@ -7,24 +8,25 @@ Summary(pt_BR):	Jogo de xadrez da GNU
 Summary(ru):	ûÁÈÍÁÔÎÁÑ ÐÒÏÇÒÁÍÍÁ GNU
 Summary(tr):	Bilgisayar satranç oyunu
 Summary(uk):	ûÁÈÏ×Á ÐÒÏÇÒÁÍÁ GNU
-Name:		gnuchess
+Name:		gnuchess4
 Version:	4.0.pl80
-Release:	10
+Release:	11
 License:	GPL
 Group:		Applications/Games
 #Source0:	ftp://ftp.gnu.org/pub/gnu/chess/%{name}-%{version}.tar.gz
-Source0:	ftp://distfiles.pld-linux.org/by-md5/8/3/833110654ec086b4ace45e037612033e/%{name}-%{version}.tar.gz
+Source0:	ftp://distfiles.pld-linux.org/by-md5/8/3/833110654ec086b4ace45e037612033e/%{_name}-%{version}.tar.gz
 # Source0-md5:	833110654ec086b4ace45e037612033e
 Source1:	xchess.png
-Source2:	%{name}.desktop
-Patch0:		%{name}-fhs.patch
-Patch1:		%{name}-ncurses.patch
-Patch2:		%{name}-ac_fixes.patch
+Source2:	%{_name}.desktop
+Patch0:		%{_name}-fhs.patch
+Patch1:		%{_name}-ncurses.patch
+Patch2:		%{_name}-ac_fixes.patch
+Patch3:		%{name}-errno.patch
 Icon:		xchess.xpm
 BuildRequires:	autoconf
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Provides:	chessprogram
+
 
 %description
 The gnuchess package contains the GNU chess program. By default,
@@ -70,7 +72,7 @@ programý ile birlikte kullanýlarak X altýnda da oynanabilir.
 ÇÒÁÆ¦ÞÎÉÊ ¦ÎÔÅÒÆÅÊÓ Ð¦Ä X Window System.
 
 %prep
-%setup -q
+%setup -q -n %{_name}-%{version}
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
@@ -84,14 +86,17 @@ cd src
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/games/gnuchess,%{_mandir}/man6} \
-	$RPM_BUILD_ROOT{%{_applnkdir}/Games/Board,%{_pixmapsdir}}
+	$RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 cd src
 %{__make} install prefix=$RPM_BUILD_ROOT%{_prefix} \
 	exec_prefix=$RPM_BUILD_ROOT%{_prefix}
 
+
+mv $RPM_BUILD_ROOT/%{_bindir}/gnuchess{,4}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_pixmapsdir}
-install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games/Board
+install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}/xchess4.desktop
+sed -i -e "s,gnuchess,gnuchess4," %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}/xchess4.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -99,7 +104,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Games/Board/*
+%{_desktopdir}/*
 %{_pixmapsdir}/*
 %{_datadir}/games/gnuchess
 %{_mandir}/man6/*
