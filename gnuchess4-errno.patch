@@ -1,0 +1,22 @@
+--- gnuchess-4.0.pl80/src/dspcom.c~	1998-09-28 08:41:19.000000000 +0200
++++ gnuchess-4.0.pl80/src/dspcom.c	2003-10-02 15:59:24.000000000 +0200
+@@ -22,7 +22,7 @@
+  * along with GNU Chess; see the file COPYING.  If not, write to
+  * the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+  */
+-
++#include <errno.h>
+ #ifdef WIN32
+ #define SHORT WIN_SHORT
+ #include <windows.h>
+--- gnuchess-4.0.pl80/src/gnuan.c~	1999-04-03 05:58:53.000000000 +0200
++++ gnuchess-4.0.pl80/src/gnuan.c	2003-10-02 16:01:00.000000000 +0200
+@@ -55,7 +55,7 @@
+  * running the BACKGROUND_ANALYSIS version.  In the version where the
+  * filename and depth are entered at runtime, the output goes to stdout.
+  */
+-
++#include <errno.h>
+ #undef BACKGROUND_ANALYSIS
+ 
+ #define MAX_DEPTH  MAXDEPTH
