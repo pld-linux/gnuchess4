@@ -22,7 +22,6 @@ Patch0:		%{_name}-fhs.patch
 Patch1:		%{_name}-ncurses.patch
 Patch2:		%{_name}-ac_fixes.patch
 Patch3:		%{name}-errno.patch
-Icon:		xchess.xpm
 BuildRequires:	autoconf
 BuildRequires:	ncurses-devel >= 5.0
 Obsoletes:	gnuchess < 5
