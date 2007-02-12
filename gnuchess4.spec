@@ -1,13 +1,13 @@
 %define		_name	gnuchess
 Summary:	Computer chess program
-Summary(de):	Computerschachprogramm
-Summary(es):	Juego de ajedrez de la GNU
-Summary(fr):	Jeu d'Иchecs
-Summary(pl):	Gra w szachy
-Summary(pt_BR):	Jogo de xadrez da GNU
-Summary(ru):	Шахматная программа GNU
-Summary(tr):	Bilgisayar satranГ oyunu
-Summary(uk):	Шахова програма GNU
+Summary(de.UTF-8):   Computerschachprogramm
+Summary(es.UTF-8):   Juego de ajedrez de la GNU
+Summary(fr.UTF-8):   Jeu d'ц╘checs
+Summary(pl.UTF-8):   Gra w szachy
+Summary(pt_BR.UTF-8):   Jogo de xadrez da GNU
+Summary(ru.UTF-8):   п╗п╟я┘п╪п╟я┌п╫п╟я▐ п©я─п╬пЁя─п╟п╪п╪п╟ GNU
+Summary(tr.UTF-8):   Bilgisayar satranц╖ oyunu
+Summary(uk.UTF-8):   п╗п╟я┘п╬п╡п╟ п©я─п╬пЁя─п╟п╪п╟ GNU
 Name:		gnuchess4
 Version:	4.0.pl80
 Release:	11
@@ -33,42 +33,42 @@ GNUchess uses a curses text-based interface. Alternatively, GNUchess
 can be used in conjunction with the xboard user interface and the X
 Window System for a graphical chessboard.
 
-%description -l de
-Das berЭhmte GNU-Schachprogramm. Es ist textorientiert, kann aber mit
+%description -l de.UTF-8
+Das berц╪hmte GNU-Schachprogramm. Es ist textorientiert, kann aber mit
 'xboard' verwendet werden, um X-orientiertes Schach zu spielen.
 
-%description -l es
-Este es el famoso programa de ajedrez de GNU. EstА basado en texto,
-pero puede ser usado en conjunciСn con xboard para jugar ajedrez
+%description -l es.UTF-8
+Este es el famoso programa de ajedrez de GNU. Estц║ basado en texto,
+pero puede ser usado en conjunciцЁn con xboard para jugar ajedrez
 basado en X.
 
-%description -l fr
-Le fameux programme de jeu d'Иchecs de GNU. Il est en mode texte mais
-peut Йtre utilisИ avec xboard pour y jouer sous X.
+%description -l fr.UTF-8
+Le fameux programme de jeu d'ц╘checs de GNU. Il est en mode texte mais
+peut ц╙tre utilisц╘ avec xboard pour y jouer sous X.
 
-%description -l pl
-Oto sЁawny GNU program szachowy. Jest w trybie tekstowym, ale w
-poЁ╠czeniu z xboard mo©e mieФ interfejs w X Window.
+%description -l pl.UTF-8
+Oto sе┌awny GNU program szachowy. Jest w trybie tekstowym, ale w
+poе┌д┘czeniu z xboard moе╪e mieд┤ interfejs w X Window.
 
-%description -l pt_BR
-Este И o famoso programa de xadrez da GNU. и baseado em texto, mas
-pode ser usado em conjunГЦo com xboard para jogar xadrez baseado em X.
+%description -l pt_BR.UTF-8
+Este ц╘ o famoso programa de xadrez da GNU. ц┴ baseado em texto, mas
+pode ser usado em conjunц╖цёo com xboard para jogar xadrez baseado em X.
 
-%description -l ru
-Пакет gnuchess содержит шахматную программу GNU. По умолчанию GNUchess
-использует текстовый интерфейс на основе curses. Альтернативно она
-может использоваться в сочетании с xboard, обеспечивающим графический
-интерфейс под X Window System.
+%description -l ru.UTF-8
+п÷п╟п╨п╣я┌ gnuchess я│п╬п╢п╣я─п╤п╦я┌ я┬п╟я┘п╪п╟я┌п╫я┐я▌ п©я─п╬пЁя─п╟п╪п╪я┐ GNU. п÷п╬ я┐п╪п╬п╩я┤п╟п╫п╦я▌ GNUchess
+п╦я│п©п╬п╩я▄п╥я┐п╣я┌ я┌п╣п╨я│я┌п╬п╡я▀п╧ п╦п╫я┌п╣я─я└п╣п╧я│ п╫п╟ п╬я│п╫п╬п╡п╣ curses. п░п╩я▄я┌п╣я─п╫п╟я┌п╦п╡п╫п╬ п╬п╫п╟
+п╪п╬п╤п╣я┌ п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄я│я▐ п╡ я│п╬я┤п╣я┌п╟п╫п╦п╦ я│ xboard, п╬п╠п╣я│п©п╣я┤п╦п╡п╟я▌я┴п╦п╪ пЁя─п╟я└п╦я┤п╣я│п╨п╦п╧
+п╦п╫я┌п╣я─я└п╣п╧я│ п©п╬п╢ X Window System.
 
-%description -l tr
-Bu ЭnlЭ GNU satranГ programЩdЩr. Metin ekranda ГalЩЧЩr ama xboard
-programЩ ile birlikte kullanЩlarak X altЩnda da oynanabilir.
+%description -l tr.UTF-8
+Bu ц╪nlц╪ GNU satranц╖ programд╠dд╠r. Metin ekranda ц╖alд╠е÷д╠r ama xboard
+programд╠ ile birlikte kullanд╠larak X altд╠nda da oynanabilir.
 
-%description -l uk
-Пакет gnuchess м╕стить шахову програму GNU. За умовчанням GNUchess
-використову╓ текстовий ╕нтерфейс на основ╕ curses. Альтернативно вона
-може використовуватись у пар╕ з програмою xboard, яка забезпечу╓
-граф╕чний ╕нтерфейс п╕д X Window System.
+%description -l uk.UTF-8
+п÷п╟п╨п╣я┌ gnuchess п╪я√я│я┌п╦я┌я▄ я┬п╟я┘п╬п╡я┐ п©я─п╬пЁя─п╟п╪я┐ GNU. п≈п╟ я┐п╪п╬п╡я┤п╟п╫п╫я▐п╪ GNUchess
+п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐я■ я┌п╣п╨я│я┌п╬п╡п╦п╧ я√п╫я┌п╣я─я└п╣п╧я│ п╫п╟ п╬я│п╫п╬п╡я√ curses. п░п╩я▄я┌п╣я─п╫п╟я┌п╦п╡п╫п╬ п╡п╬п╫п╟
+п╪п╬п╤п╣ п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐п╡п╟я┌п╦я│я▄ я┐ п©п╟я─я√ п╥ п©я─п╬пЁя─п╟п╪п╬я▌ xboard, я▐п╨п╟ п╥п╟п╠п╣п╥п©п╣я┤я┐я■
+пЁя─п╟я└я√я┤п╫п╦п╧ я√п╫я┌п╣я─я└п╣п╧я│ п©я√п╢ X Window System.
 
 %prep
 %setup -q -n %{_name}-%{version}
