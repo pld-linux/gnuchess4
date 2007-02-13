@@ -1,13 +1,13 @@
 %define		_name	gnuchess
 Summary:	Computer chess program
-Summary(de.UTF-8):   Computerschachprogramm
-Summary(es.UTF-8):   Juego de ajedrez de la GNU
-Summary(fr.UTF-8):   Jeu d'échecs
-Summary(pl.UTF-8):   Gra w szachy
-Summary(pt_BR.UTF-8):   Jogo de xadrez da GNU
-Summary(ru.UTF-8):   Шахматная программа GNU
-Summary(tr.UTF-8):   Bilgisayar satranç oyunu
-Summary(uk.UTF-8):   Шахова програма GNU
+Summary(de.UTF-8):	Computerschachprogramm
+Summary(es.UTF-8):	Juego de ajedrez de la GNU
+Summary(fr.UTF-8):	Jeu d'échecs
+Summary(pl.UTF-8):	Gra w szachy
+Summary(pt_BR.UTF-8):	Jogo de xadrez da GNU
+Summary(ru.UTF-8):	Шахматная программа GNU
+Summary(tr.UTF-8):	Bilgisayar satranç oyunu
+Summary(uk.UTF-8):	Шахова програма GNU
 Name:		gnuchess4
 Version:	4.0.pl80
 Release:	11
